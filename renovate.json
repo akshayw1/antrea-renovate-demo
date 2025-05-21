@@ -1,11 +1,21 @@
+
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "packageRules": [
     {
       "matchManagers": ["gomod"],
-      "vulnerabilityAlerts": true,
-      "updateTypes": ["patch", "minor", "major"],
-      "groupName": "Go Vulnerability Updates"
+      "enabled": false
+    },
+    {
+      "matchManagers": ["gomod"],
+      "matchVulnerabilityAlerts": true,
+      "enabled": true,
+      "groupName": "Security: Critical Dependency Updates"
     }
-  ]
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "postUpdateOptions": ["gomodTidy"]
 }
