@@ -12,7 +12,7 @@
     {
       "matchDatasources": ["go"],
       "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchVulnerabilityAlerts": true,
+      "matchVulnerabilities": ["any"],
       "enabled": true
     }
   ],
