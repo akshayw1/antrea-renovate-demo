@@ -1,22 +1,11 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "packageRules": [
     {
-      "matchDatasources": ["go"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "enabled": false
-    },
-    {
-      "matchDatasources": ["go"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchVulnerabilities": ["any"],
-      "enabled": true
+      "matchManagers": ["gomod"],
+      "vulnerabilityAlerts": true,
+      "updateTypes": ["patch", "minor", "major"],
+      "groupName": "Go Vulnerability Updates"
     }
-  ],
-  "vulnerabilityAlerts": {
-    "enabled": true
-  }
+  ]
 }
