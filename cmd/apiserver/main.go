@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/YOUR-USERNAME/antrea-renovate-demo/internal/api"
+	"github.com/akshayw1/antrea-renovate-demo/internal/api"
 )
 
 func main() {

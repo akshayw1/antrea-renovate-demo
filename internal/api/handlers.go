@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/YOUR-USERNAME/antrea-renovate-demo/internal/auth"
-	"github.com/YOUR-USERNAME/antrea-renovate-demo/internal/storage"
+	"github.com/akshayw1/antrea-renovate-demo/internal/auth"
+	"github.com/akshayw1/antrea-renovate-demo/internal/storage"
 )
 
 // APIServer encapsulates the API server components
